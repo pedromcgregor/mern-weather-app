@@ -1,0 +1,6 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#4c851e"
+  },
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false
+}
