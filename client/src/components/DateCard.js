@@ -14,7 +14,7 @@ const DateCard = (props) =>{
             
         </div>
         <div className='card-back'>
-          <h1>{props.cities.main.name}</h1>
+          <h1>{days[fecha.getDay()]} {' '} {fecha.getDate()}</h1>
           <ul>
             <li>
               <strong>Temp:</strong> {props.cities.main.temp}
@@ -26,7 +26,13 @@ const DateCard = (props) =>{
               <strong>Max:</strong> {props.cities.main.temp_max}
             </li>
             <li>
-              <strong>Humidity:</strong> {props.cities.main.humidity}
+              <strong>Humedad:</strong> {props.cities.main.humidity}
+            </li>
+            <li>
+              <strong>Presion:</strong> {props.cities.main.pressure}
+            </li>
+            <li>
+              <strong>Viento:</strong> {props.cities.main.wind}
             </li>
             
           </ul>

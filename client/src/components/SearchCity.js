@@ -1,15 +1,14 @@
-const SearchCity = (props) => {
-    return (
-        <section className='search'>
-        <input 
-            className='form-control'
-            type='text'
-            value={props.value}
-            onChange={(e)=> props.setSearchValue(e.target.value)}
-            placeholder='City to search...'
-            autoFocus
-            />
+import Select from 'react-select';
+
+const SearchCity = ({options,onChange,defaultValue}) => {
+
+return(
+    
+    <section className='container ' style={{color:'black', width:'400px', paddingBottom:'20px'}}>
+        <Select options={options} onChange={onChange} defaultValue={defaultValue} />
     </section>
-    )
-};
+    
+)
+}
+
 export default SearchCity;

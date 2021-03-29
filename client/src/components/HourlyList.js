@@ -2,10 +2,10 @@ import Hourly from './Hourly';
 
 const HourlyList = (props) => {
     return(
-        <section className='small-cards'>
+        <section className='small-cards' >
         {props.hour.map((hour, index) => (
-            <div onClick={()=>props.handleHourlyClick()}>
-            <Hourly key={index} hour={hour}/>
+            <div key={index} onClick={()=>props.handleHourlyClick()}>
+            <Hourly  hour={hour}/>
             </div>
             
         ))}
